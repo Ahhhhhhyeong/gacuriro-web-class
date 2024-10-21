@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+</head>
+<body>
+	<h1>Your carts</h1>
+	<div id="cartItem"></div>
+	
+	<script>
+		function getCookies() {
+			const cookies = document.cookie.split("; ");
+			let output="<table border = '1'><tr><th>Item</th><th>Quantity</th><th>action</th></tr>";
+			
+			cookies.forEach(cookie => {
+				const [name, value] = cookie.split('=');
+				if(name && value){
+					output += `<tr>
+								<td>${decodeURIComponent(name)}</td>
+								<td>${value}</td>
+								<td>
+									<button onclick="editItem('${name}')">Edit</button>
+									<button onclick="deleteItem('${name}')">Delete</button>
+								</td>
+								</tr>`;					
+				}
+			});
+			
+			output += "</table>";
+			document.getElementById("cartItem").innerHTML = output;
+		}
+		
+		function editItem(name) {
+			const newQuantity = prompt("Enter new quantity");
+			if(newQuantity != null && newQuantity > 0){
+				document.cookie = `${name} = ${newQuantity}; path=/IshamiProject3`;
+				getCookies();
+			}
+		}
+		
+		function deleteItem(name){
+			document.cookie = `${name}=; path=/IshamiProject3; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+			getCookies();
+		}
+		
+		window.onload = getCookies;
+	</script>
+</body>
+</html>
