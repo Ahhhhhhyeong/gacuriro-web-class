@@ -1,0 +1,92 @@
+<!-- 
+Here is CSS Basic Properties
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Basic Properties</title>
+<style>
+.text-style {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+.text-style h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+.text-style p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.box-style {
+	padding: 10px;
+	border: 1px solid black;
+	margin: 20px;
+	/* background-image: url('creative-css3-tutorials-2.jpg'); */
+	width:300px; 
+	height:300px;
+	/* background-size: 100% 100%; */
+}
+.box-style h1 {
+	color: red;
+}
+
+.layout-style div{
+
+}
+
+.layout-style span{
+
+}
+</style>
+</head>
+<body>
+<div class="text-style" id="text-style">
+  <h1>text formatting</h1>
+  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+  </p>
+</div>
+
+
+<div class="box-style" id="box-style">
+	<h1>The Box Model</h1>
+</div>
+
+<!-- Flex Container with inline styles -->
+<div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; height: 200px; background-color: #f0f0f0; border: 2px solid #ddd;">    
+<!-- Flex Items with inline styles -->
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Flex Container 1.</div>
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Flex Container 2.</div>
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Flex Container 3.</div>    
+</div>
+
+<div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; height: 200px; background-color: #f0f0f0; border: 2px solid #ddd;">
+        <div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Flex Direction 1</div>
+        <div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Flex Direction 2</div>
+        <div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Flex Direction 3</div>
+</div>
+
+<!-- Flex Container with justify-content: space-between; -->
+<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 200px; background-color: #f0f0f0; border: 2px solid #ddd; padding: 0 20px;">     
+	<!-- Flex Items with inline styles -->
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Justify Content 1</div>
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Justify Content 2</div>
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Justify Content 3</div>
+</div>
+<!-- Flex Container with align-items: center; -->
+<div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; height: 200px; background-color: #f0f0f0; border: 2px solid #ddd;">       
+	<!-- Flex Items with inline styles -->
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Align Items 1</div>
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Align Items 2</div>
+	<div style="background-color: #4CAF50; color: white; padding: 20px; font-size: 18px; text-align: center; border-radius: 5px;">This is a Align Items 3</div>
+</div>
+
+</body>
+</html>
