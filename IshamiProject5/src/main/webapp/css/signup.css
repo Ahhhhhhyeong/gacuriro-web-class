@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Center the sign-up form */
+.signup-page {
+    background-color: #fff;
+    padding: 25px 35px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Input fields */
+.signup-page input[type="text"],
+.signup-page input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit button */
+.signup-page input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.signup-page input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+    margin: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .signup-page {
+        width: 95%;
+        padding: 20p
+	}
+}
