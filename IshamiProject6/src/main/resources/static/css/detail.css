@@ -1,0 +1,56 @@
+/* General Body Styling */
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #ffffff; /* White background */
+	color: #000000; /* Black text */
+	line-height: 1.6;
+}
+/* Main Content */
+main {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #ffffff; /* White background */
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Labels */
+h1 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #2d3748; /* Slightly darker for contrast */
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin: 10px 0 5px;
+	font-weight: bold;
+	color: #4a5568; /* Neutral gray */
+}
+
+/* Paragraphs for Text */
+p {
+	margin: 5px 0 15px;
+	padding: 10px;
+	background-color: #f7fafc; /* Light gray for emphasis */
+	border: 1px solid #e2e8f0;
+	border-radius: 4px;
+	font-size: 1rem;
+	word-wrap: break-word;
+}
+
+/* Buttons and Links */
+a {
+	display: inline-block;
+	text-decoration: none;
+	margin: 10px 5px;
+	padding: 10px 20px;
+	color: #2b6cb0;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+

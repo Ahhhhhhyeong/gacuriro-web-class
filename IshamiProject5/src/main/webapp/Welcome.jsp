@@ -16,9 +16,8 @@
 	// Retrieve the user object from the session
 	User user = (User) session.getAttribute("user");
 	%>
-
-	<c:choose>
-		<!-- Check if the user object exists and if the user level is 1 (e.g., admin) -->
+	<!-- Check if the user object exists and if the user level is 1 (e.g., admin) -->
+	<c:choose>		
 		<c:when test="${user != null && user.level == 1}">
 			<c:redirect url="user?action=loadUsers" />
 			<!-- Redirect to loadUsers action if the user is an admin -->

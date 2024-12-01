@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" th:href="@{/css/detail.css}" />
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+<title>Detail Post</title>
+</head>
+<body>
+	<!-- Header -->
+	<div th:replace="fragments/header :: header"></div>
+
+	<main>
+		<h1>Detail Post</h1>
+
+		<div>
+			<!-- Title Field -->
+			<label for="title">Title:</label>
+			<p id="title" th:text="${post.title}"></p>
+
+			<!-- Content Field -->
+			<label for="content">Content:</label>
+			<p id="content" th:text="${post.content}"></p>
+
+			<!-- Buttons -->
+			<a th:href="@{/posts/edit/{id}(id=${post.id})}">Edit</a> 
+			<a th:href="@{/posts}" >Back to List</a>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
